@@ -1,0 +1,24 @@
+1. JS Runtime- cross platform runtime environment for executing js code outside of a browser.
+2. Running js on the server or any computer
+3. Built on Chrome's V8 Engine - compiles js directly to native machine code
+4. V8 + Backend features = NodeJs
+
+- Event driven, non blocking UI model
+- Full Stack JS- both client and server sides
+- scalable
+- versatility : suitable for web, real-time chat, REST API servers
+
+==> FEATURES ADDED IN v8
+
+1. Non blocking I/O
+2. Networking Support: supports tcp/udp sockets for buildiing lower level network appliactions (constant connection eg. whatsapp continuous chat)
+3. File System Access: provide API to read and write files directly
+4. Server Side Capabilities: handle http request, file operations
+5. Modules: organize code into reusable modules using require().
+
+==> Removed Features
+
+1. Window Object 
+2. DOM manipulation
+3. BOM
+4. Web specific APIs
