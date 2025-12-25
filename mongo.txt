@@ -11,4 +11,7 @@ Mongodb Shell:
 1) use databasename; : for switching to a db
 2) show dbs; : for showing available databases
 3) show collections : for showing available collections
-4) db.mycollection.insertOne({key : value, key : value}) : for inserting value in the collection 
+4) db.mycollection.insertOne({key : value, key : value}) : for inserting document in the collection (automatically gives object an id)
+5) cls : clearing command shell
+6) db.mycollection.insertMany([{key: value,key:value},{key:value,key: value}]) : inserting multiple documents at once in db
+
