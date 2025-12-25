@@ -1,0 +1,6 @@
+mongod: core engine of mongodb
+mongosh: for connecting mongod but it is command line shell. fetch data from mongod in the form of json.
+mongodb compass: gui for connecting mongod, same as mongosh 
+- by default runs at 27017 port
+
+
