@@ -16,9 +16,14 @@
 4. Server Side Capabilities: handle http request, file operations
 5. Modules: organize code into reusable modules using require().
 
-==> Removed Features
+==> Removals
 
 1. Window Object 
 2. DOM manipulation
 3. BOM
 4. Web specific APIs
+
+******
+node- js runtime environment which uses v8
+express- framework
+- each server has a ip address and each server will have multiple services and it will be differentiated by port number.
