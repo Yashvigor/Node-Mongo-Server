@@ -23,7 +23,21 @@
 3. BOM
 4. Web specific APIs
 
-******
+******************************************************************************
+
 node- js runtime environment which uses v8
 express- framework
 - each server has a ip address and each server will have multiple services and it will be differentiated by port number.
+
+Web Server:
+- will be accessed by a client. 
+- client requests server for a data and that server may get data from another server or a database or filesystems, so it may take some time ( I/0 intensive work ) 
+- java has a tomcat server and as java has threading concept, each client is assigned a thread and they can be executed at once, 200 threads are allowed at once, but js dont have threading concept. 
+
+--> FOR A NODE SERVER
+- its a single threaded application.
+two ways to solve this:
+1) asynchronous: the moment the response is got to the worker , so a callback function is executed(event loop) 
+2) non blocking I/O: when client sents request to server so that thread will sent the request to someone else(multiple workers) so current thread wont be busy with that request. 
+worker: node js uses  libuv(library) for non-blocking I/O built in c uses kernel which has multiple threads. 
+IMP::: not much suitable for cpu intensive work. 
