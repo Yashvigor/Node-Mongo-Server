@@ -1,9 +1,14 @@
-mongod: core engine of mongodb
-mongosh: for connecting mongod but it is command line shell. fetch data from mongod in the form of json.
-mongodb compass: gui for connecting mongod, same as mongosh 
+mongod – the main MongoDB server daemon. It handles connections,
+database storage, and queries. You must run this before using MongoDB
+locally.
+mongosh – the MongoDB Shell. It’s the command-line interface for
+interacting with MongoDB. You use it to run commands, queries, and scripts.
+MongoDB Compass – a GUI tool for visualizing data, running queries, and
+analyzing performance. Perfect for beginners who prefer a graphical view.
 - by default runs at 27017 port
 
 - a database can have multiple collections and a collection can have multiple documents which have json like data. 
+
 
 
 Mongodb Shell:
@@ -14,4 +19,16 @@ Mongodb Shell:
 4) db.mycollection.insertOne({key : value, key : value}) : for inserting document in the collection (automatically gives object an id)
 5) cls : clearing command shell
 6) db.mycollection.insertMany([{key: value,key:value},{key:value,key: value}]) : inserting multiple documents at once in db
+
+Aggregation Pipeline:
+
+-Aggregation pipelines in MongoDB are used to analyze and transform data. They
+work in stages: each stage performs an operation, and the output of one stage
+becomes the input of the next
+
+ MongoDB Indexes:
+
+-Indexes in MongoDB are special data structures that improve the speed of read
+operations on a collection. They work similarly to indexes in books, allowing the
+database to quickly locate and access the data without scanning every document.
 
